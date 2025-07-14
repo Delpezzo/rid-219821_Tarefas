@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Barra de Tarefas</title>
+</head>
+<body>
+    <main>
+        <h1>Board de tarefas</h1>
+        <section id="create-task-section">
+            <form id="create-task-form">
+                <input
+                   type="text"
+                   id="task-input"
+                   name="tasks"
+                   class="input-form"
+                   aria-label="Nome da Tarefa"
+                   placeholder="Nome da Tarefa"
+                >
+                <input 
+                   type="text"
+                   id="label-input"
+                   name="label"
+                   class="input-form"
+                   aria-label="Etiqueta"
+                   placeholder="Etiqueta"
+                >
+                <button type="submit" aria-label="register-task" id="save-task" class="add-task-btn">+</button>    
+            </form>
+        </section>
+
+        <section class="task-list-section">
+            <ul id="task-list"></ul>
+        </section>
+
+        <footer id="task-footer">
+            <h2></h2>
+        </footer>
+    </main>
+<script src="./index.js"></script>
+</body>
+</html>
